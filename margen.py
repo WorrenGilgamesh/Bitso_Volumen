@@ -28,8 +28,9 @@ def volBitso(moneda):
         return float(margen*decimal.Decimal(0.1))
     return margen(transHora(trades))
 
-print 'btc_mxn:' , volBitso('btc_mxn')
+print 'btc_mxn:' ,volBitso('btc_mxn')
 print 'eth_mxn:' ,volBitso('eth_mxn')
-print 'xrp_btc:' ,volBitso('xrp_btc')
+print 'xrp_mxn:' ,volBitso('xrp_mxn')
 print 'ltc_mxn:' ,volBitso('ltc_mxn')
 print 'bch_mxn:' ,volBitso('bch_mxn')
+print 'Total:', volBitso('btc_mxn')+volBitso('eth_mxn')+volBitso('xrp_mxn')+volBitso('ltc_mxn')+volBitso('bch_mxn')
