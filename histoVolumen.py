@@ -29,10 +29,8 @@ def historialVolumen(moneda):
     while 1>0:
         trades = api.trades(moneda,limit = '100')
         num=1
-        difer(num)
-        print num
         with open(pathname+"/num.txt", 'a') as d:
-            d.write(moneda+': '+str(num)+'\n')
+            d.write(moneda+': '+str(difer(num))+'\n')
         d.close()
         while difer(num)!=0:
             difer(num)
